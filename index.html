@@ -10,10 +10,86 @@
       crossorigin="anonymous"
     />
     <title>Bootstrap demo</title>
+    <script
+      src="https://kit.fontawesome.com/a52c34b53d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <nav class="navbar bg-body-tertiary">
+      <!--NAV BAR-->
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://images.seeklogo.com/logo-png/28/2/instagram-new-2016-glyph-logo-png_seeklogo-282176.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Instagram
+        </a>
+      <!--create post button-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Create New Post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Modal Form/Text Area-->
+        <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label"><stron>Caption:</stron></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="button" class="btn"><i class="fa-solid fa-camera"></i></button>
+  <button type="button" class="btn"><i class="fa-solid fa-location-dot"></i></button>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!--dropdown button-->
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <!--Setttings Icon-->
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><a class="dropdown-item" href="#">Log Out</a></li>
+        </ul>
+      
+</div>
+
+    </nav>
+
+    <ul
+      class="nav nav-pills mb-3 d-flex justify-content-center my-3"
+      id="pills-tab"
+      role="tablist"
+    >
+      <!--tabs-->
       <li class="nav-item" role="presentation">
         <button
           class="nav-link active"
@@ -25,7 +101,8 @@
           aria-controls="pills-home"
           aria-selected="true"
         >
-          Home
+          <i class="fa-solid fa-table-cells"></i>
+          <!--grid icon-->
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -39,7 +116,8 @@
           aria-controls="pills-profile"
           aria-selected="false"
         >
-          Profile
+          <i class="fa-solid fa-square"></i>
+          <!--aquare icon-->
         </button>
       </li>
     </ul>
@@ -51,7 +129,153 @@
         aria-labelledby="pills-home-tab"
         tabindex="0"
       >
-        POST PAGE
+        <div class="container d-flex justify-content-center">
+          <div
+            class="row row-cols-1 row-cols-md-1 g-4"
+            style="max-width: 500px"
+          >
+            <!--feed code-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://hot-dogz.com/wp-content/uploads/2022/05/Rainbow-8-1000x1000.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>204 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.licensingsource.net/wp-content/uploads/2019/05/LionelMessi500x500.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>9,291 Likes</strong></h5>
+                  <p class="card-text">This is a short card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://i.etsystatic.com/10417627/r/isla/e68a22/16139071/isla_500x500.16139071_22af0n0g.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>31 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://cdnmedia.endeavorsuite.com/images/ThumbGenerator/Thumb.aspx?img=https%3A%2F%2Fcdnmedia.endeavorsuite.com%2Fimages%2Forganizations%2F4a8d9d57-6cb1-4123-b828-c351c5f6fadc%2F2023-CRF300LS-gallery-06-750x750.jpg&v=1682174501462&w=500"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>102 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/American_football_referees.jpg/500px-American_football_referees.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>99 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.ivanandmike.com/wp-content/uploads/2019/10/57-Ocean-1.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>17 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.pioneerdj.com/-/media/pioneerdj/images/features/software/djm-rec/kf6_500x500.jpg?h=500&w=500&hash=4086535D4A9331A0F648C6C8F1ADF3C3"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>3 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://rmi.org/wp-content/uploads/2017/04/eLab-Leap-New-York-500x500.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>138 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/516PLLFOhJL._UXNaN_FMjpg_QL85_.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>45 Likes</strong></h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         class="tab-pane fade"
@@ -60,7 +284,90 @@
         aria-labelledby="pills-profile-tab"
         tabindex="0"
       >
-        GRID PAGE
+        <div class="container py-4">
+          <div class="row g-3">
+            <!-- Imagen 1 -->
+            <div class="col-4">
+              <img
+                src="https://hot-dogz.com/wp-content/uploads/2022/05/Rainbow-8-1000x1000.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 1"
+              />
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-4">
+              <img
+                src="https://www.licensingsource.net/wp-content/uploads/2019/05/LionelMessi500x500.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 2"
+              />
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-4">
+              <img
+                src="https://i.etsystatic.com/10417627/r/isla/e68a22/16139071/isla_500x500.16139071_22af0n0g.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 3"
+              />
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="col-4">
+              <img
+                src="https://cdnmedia.endeavorsuite.com/images/ThumbGenerator/Thumb.aspx?img=https%3A%2F%2Fcdnmedia.endeavorsuite.com%2Fimages%2Forganizations%2F4a8d9d57-6cb1-4123-b828-c351c5f6fadc%2F2023-CRF300LS-gallery-06-750x750.jpg&v=1682174501462&w=500"
+                class="img-fluid w-100"
+                alt="Imagen 4"
+              />
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="col-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/American_football_referees.jpg/500px-American_football_referees.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 5"
+              />
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="col-4">
+              <img
+                src="https://www.ivanandmike.com/wp-content/uploads/2019/10/57-Ocean-1.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 6"
+              />
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="col-4">
+              <img
+                src="https://www.pioneerdj.com/-/media/pioneerdj/images/features/software/djm-rec/kf6_500x500.jpg?h=500&w=500&hash=4086535D4A9331A0F648C6C8F1ADF3C3"
+                class="img-fluid w-100"
+                alt="Imagen 7"
+              />
+            </div>
+
+            <!-- Imagen 8 -->
+            <div class="col-4">
+              <img
+                src="https://rmi.org/wp-content/uploads/2017/04/eLab-Leap-New-York-500x500.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 8"
+              />
+            </div>
+
+            <!-- Imagen 9 -->
+            <div class="col-4">
+              <img
+                src="https://m.media-amazon.com/images/I/516PLLFOhJL._UXNaN_FMjpg_QL85_.jpg"
+                class="img-fluid w-100"
+                alt="Imagen 9"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
