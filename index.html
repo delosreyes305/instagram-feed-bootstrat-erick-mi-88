@@ -17,21 +17,18 @@
   </head>
 
   <body>
-    <nav class="navbar bg-body-tertiary">
-      <!--NAV BAR-->
-      <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://images.seeklogo.com/logo-png/28/2/instagram-new-2016-glyph-logo-png_seeklogo-282176.png"
-            alt="Logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top"
-          />
-          Instagram
-        </a>
-      <!--create post button-->
-<!-- Button trigger modal -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram fa-xl"></i> Instagram</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+      </ul>
+      
+   <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Create New Post
 </button>
@@ -41,7 +38,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+        <h2 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -49,8 +46,8 @@
         <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label"><stron>Caption:</stron></label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button type="button" class="btn"><i class="fa-solid fa-camera"></i></button>
-  <button type="button" class="btn"><i class="fa-solid fa-location-dot"></i></button>
+  <button type="button" class="btn border mt-2"><i class="fa-solid fa-camera"></i></button>
+  <button type="button" class="btn border mt-2$ "><i class="fa-solid fa-location-dot"></i></button>
 </div>
       </div>
       <div class="modal-footer">
@@ -61,9 +58,8 @@
   </div>
 </div>
 
-
         <!--dropdown button-->
-      <div class="dropdown">
+      <div class="dropdown ms-3 me-3">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -77,15 +73,16 @@
           <li><a class="dropdown-item" href="#">Profile</a></li>
           <li><a class="dropdown-item" href="#">Accesibility</a></li>
           <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-          <li><a class="dropdown-item" href="#">Log Out</a></li>
+          <li><a class="dropdown-item text-danger border-top" href="#">Log Out</a></li>
         </ul>
       
 </div>
 
-    </nav>
+  </div>
+</nav>
 
     <ul
-      class="nav nav-pills mb-3 d-flex justify-content-center my-3"
+      class="nav nav-pills mb-3 mt-3 d-flex justify-content-center"
       id="pills-tab"
       role="tablist"
     >
